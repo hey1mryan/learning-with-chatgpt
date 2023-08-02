@@ -3,8 +3,8 @@ function setup() {
     background(0);
     nostroke();
 
-    let xPos = 15;
-    let yPos = 15;
+    let xPos = 0;
+    let yPos = 0;
     let xSpeed = 1;
     let ySpeed = 4.5;
 
@@ -18,10 +18,10 @@ function draw() {
     xPos += xSpeed;
     yPos += ySpeed;
 
-    if (xPos < 25 || xPos > 475) {
+    if (xPos < 15 || xPos > 485) {
         xSpeed *= -1;
     }
-    if (yPos < 25 || yPos > 475) {
+    if (yPos < 15 || yPos > 485) {
         ySpeed *= -1;
     }
 }
